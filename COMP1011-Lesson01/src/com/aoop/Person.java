@@ -35,8 +35,10 @@ public class Person {
 	public Person( String name, float height, float weight ) {
 		
 		this.name = name;
-		this.setHeight( height );
-		this.setWeight( weight );
+		
+		// Removed Setter and used direct property access
+		this.height = height;
+		this.weight = weight;
 		
 	}
 
