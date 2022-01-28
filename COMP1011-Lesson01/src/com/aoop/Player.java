@@ -8,11 +8,14 @@ public class Player {
 		System.out.println( "Hello World! " + strength );
 		
 		Person tom = new Person( 6, 200 );
-		tom.walks();
 		
 		tom.walks();
 		
 		tom.walks();
+		
+		tom.walks();
+		
+		tom.setHeight( 10 );
 		
 	}
 	

@@ -2,11 +2,23 @@ package com.aoop;
 
 public class Person {
 	
-	float height, weight;
+	private float height, weight;
 	
-	public Person( float height, float weight ) {
+	public float getHeight() {
+		
+		return height;
+		
+	}
+
+	public void setHeight( float height ) {
 		
 		this.height = height;
+		
+	}
+
+	public Person( float height, float weight ) {
+		
+		this.setHeight(height);
 		this.weight = weight;
 		
 	}
