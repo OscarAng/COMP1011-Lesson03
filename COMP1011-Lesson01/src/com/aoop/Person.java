@@ -4,6 +4,7 @@ public class Person {
 	
 	private float height, weight;
 	private String name;
+	private int IQ;
 	
 	public float getHeight() {
 		
