@@ -4,18 +4,14 @@ public class Player {
 	
 	public static void main( String[] args ) {
 		
-		int strength = 10;
-		System.out.println( "Hello World! " + strength );
+		int year = 2022;
+		System.out.println( "Hello World! It's " + year + "!" );
 		
-		Person tom = new Person( 6, 200 );
-		
+		Person tom = new Person( "Tom", 6, 200.9f );		
 		tom.walks();
 		
-		tom.walks();
-		
-		tom.walks();
-		
-		tom.setHeight( 10 );
+		Person mike = new Person( "Mike", 7, 205.5f );
+		mike.walks();
 		
 	}
 	
