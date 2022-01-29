@@ -13,6 +13,9 @@ public class Player {
 		Person mike = new Person( "Mike", 7.2f, 205.5f );
 		mike.walks();
 		
+		Person matt = new Person( "Matt", 6.7f, 202.7f );
+		matt.eats();
+		
 	}
 	
 }
