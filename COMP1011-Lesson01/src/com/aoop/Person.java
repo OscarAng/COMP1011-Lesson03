@@ -23,9 +23,7 @@ public class Person {
 		this.height = height;
 		
 	}
-	
-	
-
+		
 	public void setWeight( float weight ) {
 		
 		this.weight = weight;
