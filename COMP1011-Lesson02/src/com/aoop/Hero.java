@@ -3,7 +3,7 @@ package com.aoop;
 public class Hero {
 
 	// Private Properties
-	private int strength, speed, health;
+	protected int strength, speed, health;
 	
 	// Public Properties
 	public String name;
