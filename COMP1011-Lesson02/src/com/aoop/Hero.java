@@ -34,23 +34,23 @@ public class Hero {
 	// Public Methods
 	public void showAbilities() {
 		
-		System.out.println( "-----------------------------" );
-		System.out.printf( "Strength: %d", this.strength );
-		System.out.printf( "Speed: %d", this.speed );
-		System.out.printf( "Health: %d", this.health );
-		System.out.println( "-----------------------------" );
+		System.out.println( "--------------" );
+		System.out.println( " Strength: " + this.strength );
+		System.out.println( " Speed: " + this.speed );
+		System.out.println( " Health: " + this.health );
+		System.out.println( "--------------" );
 		
 	}
 	
 	public void fight() {
 		
-		System.out.printf( "%s is Fighting", this.name );
+		System.out.println( this.name + " is Fighting!" );
 		
 	}
 	
 	public void run() {
-		
-		System.out.printf( "%s is Running", this.name );
+	
+		System.out.println( this.name + " is Running!" );
 		
 	}
 	
