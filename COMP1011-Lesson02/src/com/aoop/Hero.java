@@ -1,6 +1,6 @@
 package com.aoop;
 
-public class Hero {
+public class Hero implements Action {
 
 	// Private Properties
 	protected int strength, speed, health;
