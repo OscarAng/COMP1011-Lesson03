@@ -1,19 +1,19 @@
 package com.aoop;
 
-public class Vehicle {
+public abstract class Vehicle {
 
 	// Private Properties
-	private int numWheels = 4;
-	private int numDoors = 2;
+	protected int numWheels = 4;
+	protected int numDoors = 2;
 	
-	private float speed = 0;
+	protected float speed = 0;
 	
-	private String colour = "";
-	private String make = "";
-	private String model = "";
-	private String year = "";
+	protected String colour = "";
+	protected String make = "";
+	protected String model = "";
+	protected String year = "";
 	
-	private final int MAX_SPEED = 40;
+	protected final int MAX_SPEED = 40;
 	
 	// Getters
 	public int getNumWheels() { return this.numWheels; }
@@ -25,25 +25,33 @@ public class Vehicle {
 	public String getYear() { return this.year; }
 	
 	// Constructor
-	public Vehicle() {
+	public Vehicle( int wheels, int doors, String colour, String make, String model, String year ) {
+		
+		this.numWheels = wheels;
+		this.numDoors = doors;
+		this.colour = colour;
+		this.make = make;
+		this.model = model;
+		this.year = year;
 		
 	}
+	
+	// Constructor
+	public Vehicle( String colour, String make, String model, String year ) {
+		
+		this.colour = colour;
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		
+	}
+	
+	// Public Abstract Methods
+	public abstract void accelerate();
+	
+	public abstract void decelerate();
 	
 	// Public Methods
-	public void accelerate() {
-		
-		this.speed += 4;
-		if( this.speed >= this.MAX_SPEED ) this.speed = this.MAX_SPEED;
-		
-	}
-	
-	public void decelerate() {
-		
-		this.speed += 6;		
-		if( this.speed < 0 ) this.speed = 0;
-		
-	}
-	
 	public void turnLeft() {
 		
 		System.out.println( "Turning Left" );
